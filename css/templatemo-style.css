@@ -681,6 +681,7 @@ footer span
     }
 	.divider {
         background-attachment: scroll;
+		min-height: 180px;
     }
 }
 
@@ -699,6 +700,18 @@ footer span
 
     #home h3 {
         font-size: 16px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+
+    #portfolio .portfolio-thumb .portfolio-overlay {
+        opacity: 0.9;              /* texto siempre visible */
+        transition: none; /* sin animación */
+    }
+
+    #portfolio .portfolio-thumb:hover .portfolio-overlay {
+        opacity: 0.9; /* anulamos el hover en móvil */
     }
 
 }
