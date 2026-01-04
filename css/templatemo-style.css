@@ -682,8 +682,9 @@ footer span
 	
     
 }
-
-
+.divider{
+        background-attachment: fixed;
+	}
 @media (max-width: 767px) {
 
     #home h1 {
