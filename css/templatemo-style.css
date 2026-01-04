@@ -225,20 +225,19 @@ h4
     background: #fff;
     padding: 0;
     position: relative;
-    zoom: 1;
     background-color: #371604;
     overflow: hidden;
     margin: 0;
     text-align: center;
+	/*max-height: 110vh;*/
 }
 .flexslider .slides {
     padding: 0;
-    zoom: 1;
 }
 .flexslider .slides img {
     width: 100%;
-    min-width: 648px;
-    min-height: 270px;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 .flexslider .slides > li {
@@ -275,7 +274,7 @@ h4
 
 /* start service */
 .seccion {
-	display:flex;
+    display: block;
 }
 #service
     {
@@ -286,13 +285,13 @@ h4
 #service .media {
     display: flex;
     width: 100%;
-    min-height: 250px; /* Altura mínima igual para todas */
+    min-height: 250px; 
     margin-bottom: 30px;
-    align-items: flex-start; /* Alinear contenido al inicio */
+    align-items: flex-start; 
 }
 #service .media-object {
-    flex-shrink: 0; /* Evitar que el icono se reduzca */
-    margin-top: 5px; /* Alinear icono con el texto */
+    flex-shrink: 0; 
+    margin-top: 5px; 
 }
 #service .media-body {
     flex: 1;
@@ -651,3 +650,54 @@ footer span
         }
 }
 /* end media 360 */
+
+
+/* ==========================
+   SLIDER – BASE RESPONSIVE
+========================== */
+
+.flexslider,
+.flexslider .slides,
+.flexslider .slides li {
+    height: 110vh; 
+}
+
+.flexslider .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================
+   SLIDER – MÓVIL 
+========================== */
+
+@media (max-width: 767px) {
+
+    .flexslider,
+    .flexslider .slides,
+    .flexslider .slides li {
+        height: 55vh;
+    }
+	
+    
+}
+
+
+@media (max-width: 767px) {
+
+    #home h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    #home h2 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    #home h3 {
+        font-size: 16px;
+    }
+
+}
