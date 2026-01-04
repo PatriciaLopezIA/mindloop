@@ -679,12 +679,9 @@ footer span
     .flexslider .slides li {
         height: 55vh;
     }
-	
-    .divider{
-        background-attachment: fixed;
-		height: auto;
-		width: auto;
-	}
+	.divider {
+        background-attachment: scroll;
+    }
 }
 
 	
