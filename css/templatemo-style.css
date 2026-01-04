@@ -680,11 +680,14 @@ footer span
         height: 55vh;
     }
 	
-    
-}
-.divider{
+    .divider{
         background-attachment: fixed;
+		height: auto;
+		width: auto;
 	}
+}
+
+	
 @media (max-width: 767px) {
 
     #home h1 {
